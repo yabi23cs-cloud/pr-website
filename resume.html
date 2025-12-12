@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Yashu B B</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Portfolio</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="resume.html" class="nav-link active">Resume</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="resume-section">
+        <div class="container">
+            <div class="resume-header">
+                <h1>Resume</h1>
+                <div class="resume-actions">
+                    <button onclick="downloadPDF()" class="btn-download">
+                        <i class="fas fa-download"></i> Download PDF
+                    </button>
+                </div>
+            </div>
+
+            <div class="resume-content">
+                <div class="resume-header-info">
+                    <h2>YASHU B B</h2>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> A.C.K Gopalan colony, Near Hopefarm Channsandra, Bangalore, Karnataka – 560067</p>
+                        <p><i class="fas fa-phone"></i> +91 9731989985</p>
+                        <p><i class="fas fa-envelope"></i> yabi23@cmrit.ac.in | yashubb12@gmail.com</p>
+                        <p><i class="fab fa-linkedin"></i> linkedin.com/in/yashu24/ | <i class="fab fa-github"></i> github.com/yashu/</p>
+                    </div>
+                </div>
+
+                <div class="resume-section-content">
+                    <h3>CAREER OBJECTIVE</h3>
+                    <p>Aspiring Software Developer skilled in Java, Python, and Full-Stack Web Development using React.js, Node.js, and Express.js. Experienced in building scalable applications, RESTful APIs, and cloud-based solutions (AWS, Azure). Strong foundation in UI/UX design, responsive web development, Data Structures, and Algorithms. Seeking an opportunity to apply technical and analytical skills to deliver impactful software solutions.</p>
+                </div>
+
+                <div class="resume-section-content">
+                    <h3>EDUCATIONAL QUALIFICATION</h3>
+                    <div class="education-item">
+                        <h4>Bachelor of Engineering – Computer Science and Engineering</h4>
+                        <p>CMR Institute of Technology, Bangalore</p>
+                        <p>CGPA: 7.05, 2027 (Pursuing)</p>
+                    </div>
+                    <div class="education-item">
+                        <h4>Pre University College–PCMB</h4>
+                        <p>SMT V P Hanchinmane PU college, Dharwad, Karnataka</p>
+                        <p>Percentage: 88%, 2023</p>
+                    </div>
+                    <div class="education-item">
+                        <h4>10th Grade</h4>
+                        <p>Seventh Day Adventist English High School, Lakshmeswara, Karnataka</p>
+                        <p>90.4%, 2021</p>
+                    </div>
+                </div>
+
+                <div class="resume-section-content">
+                    <h3>TECHNICAL SKILLS</h3>
+                    <ul>
+                        <li><strong>Programming languages:</strong> Java, Python, JavaScript</li>
+                        <li><strong>Web Technologies:</strong> HTML, CSS, React.js, Node.js, Express.js</li>
+                        <li><strong>Web Development Focus:</strong> Full-Stack, RESTful APIs, UI/UX, responsive design</li>
+                        <li><strong>Databases:</strong> MySQL, MongoDB</li>
+                        <li><strong>Cloud:</strong> AWS, Azure</li>
+                        <li><strong>Version Control & Tools:</strong> Git, GitHub, VS Code</li>
+                        <li><strong>Core CS Concepts:</strong> Data Structures, Algorithms, Object-Oriented Programming, Problem-Solving</li>
+                    </ul>
+                </div>
+
+                <div class="resume-section-content">
+                    <h3>INTERNSHIP EXPERIENCE</h3>
+                    <div class="experience-item">
+                        <h4>Software Development Intern</h4>
+                        <p><strong>SBM Tech Solutions</strong> | April 2025 – July 2025</p>
+                        <ul>
+                            <li>Worked on web development and automation tasks, contributing to live internal projects</li>
+                            <li>Built responsive front-end components using HTML, CSS, and JavaScript</li>
+                            <li>Automated small internal workflows, reducing manual effort by 15%</li>
+                            <li>Collaborated via Git and GitHub, gaining hands-on experience with version control and debugging</li>
+                            <li>Participated in project lifecycle stages from requirement gathering to deployment testing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function downloadPDF() {
+            const link = document.createElement('a');
+            link.href = 'YASHU%20B%20B%20Word.pdf';
+            link.download = 'Yashu_BB_Resume.pdf';
+            link.click();
+        }
+
+
+    </script>
+</body>
+</html>

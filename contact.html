@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Yashu B B</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Portfolio</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="resume.html" class="nav-link">Resume</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="contact-page">
+        <div class="container">
+            <h1 class="page-title">Get In Touch</h1>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>yabi23@cmrit.ac.in</p>
+                        <p>yashubb12@gmail.com</p>
+                        <a href="mailto:yabi23@cmrit.ac.in" class="contact-btn">Send Email</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <p>+91 9731989985</p>
+                        <a href="tel:+919731989985" class="contact-btn">Call Now</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Location</h3>
+                        <p>A.C.K Gopalan colony</p>
+                        <p>Near Hopefarm Channsandra</p>
+                        <p>Bangalore, Karnataka – 560067</p>
+                    </div>
+                </div>
+
+                <div class="social-section">
+                    <h2>Connect With Me</h2>
+                    <div class="social-links-large">
+                        <a href="https://www.linkedin.com/in/yashu24/" class="social-card linkedin">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <p>Professional Network</p>
+                            </div>
+                        </a>
+                        <a href="https://github.com/yashu/" class="social-card github">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <p>Code Repository</p>
+                            </div>
+                        </a>
+                        <a href="https://leetcode.com/u/yashu24/" class="social-card leetcode">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <h4>LeetCode</h4>
+                                <p>Coding Practice</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-section">
+                    <h2>Send Message</h2>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+        });
+    </script>
+</body>
+</html>
